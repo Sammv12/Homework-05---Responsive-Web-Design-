@@ -1,0 +1,254 @@
+/* Home.css */
+
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .holder {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin: 10px 60px;
+  }
+  
+  body {
+    margin: 0px;
+  }
+  
+  .welcomeseccion {
+    display: flex;
+  }
+  
+  h1 {
+    font-size: 32px;
+    line-height: 38.73px;
+    font-weight: 500;
+    margin-top: 0;
+  }
+  
+  h2 {
+    font-size: 24px;
+    line-height: 29.05px;
+    font-weight: 500;
+  }
+  
+  .welcomeimg {
+    margin-left: 20px;
+  }
+  
+  .textseccion {
+    border-bottom: 0.5px solid #CCCCCC;
+  }
+  
+  .welcomeimg img {
+    width: 250px;
+    height: 140.63px;
+  }
+  
+  .pictureseccion img {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    /* height: 200px;
+    margin: 45px 30px 0 0; */
+  }
+  
+  .pictureseccion {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .topnav {
+    background-color: #484A47;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .holder {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .topnav li {
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  .topnav li a {
+    padding: 16px 30px;
+    text-decoration: none;
+    color: #f2f2f2;
+  }
+  
+  .topnav li a:hover {
+    border-bottom: 5px solid #C751FF;
+  }
+  
+  .topnav ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .brandNav p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  
+  .brandNav img {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .brandNav {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background-color: #484A47;
+    color: #f2f2f2;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .menu-toggle:focus {
+    outline: none;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 48px;
+    height: 100vh;
+    right: 0px;
+    background-color: #484A47;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .menu.open ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu.open ul li a:hover {
+    border-left: 5px solid #C751FF;
+    border-bottom: 0px;
+  }
+  
+  .menu.open ul li {
+    display: block;
+    text-align: left;
+    margin: 25px 0px;
+    
+  }
+  
+  .menu.open ul li a {
+    padding: 10px 20px;
+  }
+  
+  /* Media query for Laptop (800px - 1199px) */
+  @media (max-width: 1199px) and (min-width: 800px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    .welcomeseccion p {
+      font-size: 14px;
+    }
+  
+    .topnav a {
+      font-size: 14px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .pictureseccion img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .pictureseccion {
+      column-gap: 25px;
+    }
+  }
+  
+  /* Media query for Mobile (<= 400px) */
+  @media (max-width: 400px) {
+    .welcomeseccion {
+      flex-direction: column;
+    }
+  
+    .container {
+      margin: 10px 20px;
+    }
+  
+    .welcomeseccion div:first-child {
+      order: 2;
+    }
+  
+    .welcomeimg {
+      order: 1;
+      margin-left: 0px;
+    }
+  
+    .welcomeimg img {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 16px;
+      margin: 0;
+    }
+  
+    .welcomeseccion p {
+      font-size: 12px;
+      margin: 0px;
+    }
+  
+    h2 {
+      font-size: 16px;
+      margin: 10px 0px 0px;
+    }
+  
+    .pictureseccion img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .pictureseccion {
+      column-gap: 10px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+    }
+  }
+  
